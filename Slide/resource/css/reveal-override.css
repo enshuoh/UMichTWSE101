@@ -1,0 +1,7 @@
+body:after {
+  content: url(../img/2color-transparentbg.png);
+  position: fixed;
+  zoom:20%;
+  bottom: 5em;
+  right: 10em;
+}

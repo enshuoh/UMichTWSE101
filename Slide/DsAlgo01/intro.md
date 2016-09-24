@@ -56,6 +56,7 @@ Python 3
 * List (陣列)
 * 迴圈
 
+<a href="https://easy-vote-tmt514.c9users.io/UMichTWSE101/Slide/DsAlgo01/quiz.html" target="_blank">前往 Quiz</a>
 
 
 --

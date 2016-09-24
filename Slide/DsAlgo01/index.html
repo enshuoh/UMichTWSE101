@@ -66,6 +66,15 @@
         { src: '../resource/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
       ]
     });
+
+
+
+  </script>
+  <script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
+  <script>
+    var socket = io.connect('http://easy-vote-tmt514.c9users.io/');
+    var uuid = guid();
+    socket.emit('vote', {voteid: "x123", voter: uuid});
   </script>
 </body>
 </html>

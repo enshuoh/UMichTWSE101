@@ -1,3 +1,17 @@
+# 先來架環境
+
+--
+
+## 註冊Github
+<img src="img/signup.png" width=800>
+
+--
+
+## 註冊Cloud 9
+<img src="img/c9.png" width=800>
+
+---
+
 # Git 小教學
 
 ---
@@ -51,11 +65,6 @@
 
 --
 
-## 註冊Github
-<img src="img/signup.png" width=800>
-
---
-
 ## 安裝 Git
 already in your c9.io workspace
 
@@ -73,7 +82,7 @@ already in your c9.io workspace
 
 --
 
-## 來幹活吧
+## 來幹點活吧
 - $ vim gods.txt
 - $ vim peasants.txt
 
@@ -90,7 +99,7 @@ already in your c9.io workspace
 
 ## 提交變更
 - $ git add .
-- $ git commit -m "comment"
+- $ git commit -m "gods and peasants should separate."
 
 --
 
@@ -103,5 +112,19 @@ already in your c9.io workspace
 
 --
 
-## 把別人的變更“拉”下來local repo
+## 把別人的變更“拉”下來local
 - $ git pull
+
+---
+
+# challenge
+
+--
+
+## 登記Github帳號
+[goo.gl/b3u8t5](goo.gl/b3u8t5)
+
+--
+
+## 把自己的名字加進gods.txt
+[https://github.com/whus6207/se101_challenge](https://github.com/whus6207/se101_challenge)

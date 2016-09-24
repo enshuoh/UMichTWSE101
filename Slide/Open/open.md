@@ -3,12 +3,15 @@
 ---
 
 ## 會用到的平台、工具
-- 共筆
-  - [Quip](https://umichtwse101.quip.com/lk7FAauwsMoH)
-- Repository
-  - [GitHub](https://github.com)
-- Cloud IDE
-  - [C9.io](https://c9.io)
+- 共筆<br>
+  <img src="https://lh3.googleusercontent.com/XxgKNDsTYLyd1mOW2GVNG8ySNr0LKTgbgFEI5q6RircDCX8UCojtIIkIFg0BPQJwvnI=w300" style="width:40px;border:none;vertical-align:middle">
+  [Quip](https://umichtwse101.quip.com/lk7FAauwsMoH)
+- Repository<br>
+  <img src="https://assets-cdn.github.com/images/modules/logos_page/Octocat.png"
+  style="width:40px;border:none;vertical-align:middle;border-radius:5px"> [GitHub](https://github.com)
+- Cloud IDE<br>
+  <img src="https://yt3.ggpht.com/-h7Ojmr9sERA/AAAAAAAAAAI/AAAAAAAAAAA/TqTddr-6GGQ/s900-c-k-no-mo-rj-c0xffffff/photo.jpg"
+  style="width:40px;border:none;vertical-align:middle;border-radius:5px"> [C9.io](https://c9.io)
 - Slack?
 - [課程網頁](https://jimmy9988.github.io/UMichTWSE101/)
 
@@ -19,11 +22,18 @@
 - 分享所學
 - 共同成長
 
+<p class="fragment">
+<img src="http://photo.xuefo.net/user/editor5/asp/upload//2013525/13694241137056.jpg"
+style="width:500px">
+
 --
 
 ## 什麼可以讓我們更好？
 - Different thinking
 - Sharing
+
+<img src="http://talentdevelop.com/WordPress/wp-content/uploads/2014/03/Steve-Jobs-Think-Different.jpg"
+style="width:600px">
 
 ---
 
@@ -72,7 +82,7 @@
 
 ## 目前計劃包含的主題
 - 其他
-  - html5
+  - HTML5
   - MVC, Restful, CMS
   - Big Data
 

@@ -2,6 +2,8 @@ body:after {
   content: url(../img/2color-transparentbg.png);
   position: fixed;
   zoom:20%;
+  -moz-transform: scale(.2, .2);
+  -moz-transform-origin: bottom right;
   bottom: 5em;
   right: 10em;
 }

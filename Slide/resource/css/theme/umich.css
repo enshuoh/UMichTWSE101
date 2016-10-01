@@ -4,6 +4,7 @@
  */
 @import url(../../lib/font/league-gothic/league-gothic.css);
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
+@import url(https://fonts.googleapis.com/css?family=Cuprum);
 /**
  * Solarized colors by Ethan Schoonover
  */
@@ -45,11 +46,11 @@ body {
 .reveal h6 {
   margin: 0 0 20px 0;
   color: #FFCB0B;
-  font-family: "League Gothic", Impact, sans-serif;
+  font-family: "Cuprum", "League Gothic", Impact, sans-serif;
   font-weight: normal;
   line-height: 1.2;
   letter-spacing: normal;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   text-shadow: none;
   word-wrap: break-word; }
 

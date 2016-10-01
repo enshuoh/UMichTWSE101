@@ -3,11 +3,13 @@
 ---
 
 ## 先來裝package
-$ git clone blah
+$ git clone https://github.com/whus6207/se101_week1.git
 
-$ cd blah/
+$ cd se101_week1/
 
-$ ./blah.sh
+$ chmod 755 setup_env.sh
+
+$ ./setup_env.sh
 
 ---
 
@@ -60,10 +62,6 @@ $ ./blah.sh
 
 --
 
-<img class="plain" src="http://beader.me/imgs/is-learning-feasible/no_free_lunch.png" width =1200>
-
---
-
 ## 推斷未知的世界
 用樣本的統計推斷整體的參數
 
@@ -86,12 +84,13 @@ Probably Approximately Correct
 
 ---
 
-## 兩種問題
+## 三種問題
 
 --
 
 - Regression: 預測連續的值 - 價格、機率...
 - Classification: 預測分類 - 好壞、哪種動物...
+- Clustering: 把相近的點歸類在一起
 
 
 --
@@ -100,18 +99,23 @@ Probably Approximately Correct
 
 --
 
-### Naive Bayes
-<img class="plain" src="http://www.saedsayad.com/images/Bayes_rule.png" width=800>
-
---
-
 ### 線性回歸 Linear Regression
 [fancy demo](http://setosa.io/ev/ordinary-least-squares-regression/)
 
 --
 
+### Naive Bayes
+<img class="plain" src="http://www.saedsayad.com/images/Bayes_rule.png" width=800>
+
+--
+
 ### 決策樹 Decision Tree
 [fancy demo](http://www.r2d3.us/%E5%9C%96%E8%A7%A3%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92%E7%AC%AC%E4%B8%80%E7%AB%A0/)
+
+--
+
+### K Means
+[影片](https://www.youtube.com/watch?v=gSt4_kcZPxE)
 
 ---
 
@@ -132,25 +136,36 @@ Probably Approximately Correct
 
 --
 
-## P1:Curse of Dimensionality
+## P1: Curse of Dimensionality
 
 --
 
-### Principle Component Analysis(PCA)
+### Sol: Principle Component Analysis(PCA)
 <img class="plain" src="http://lazyprogrammer.me/wp-content/uploads/2015/11/PCA.jpg">
 
 --
 
-### Cross Validation
+## P2: Biased Training Data
 
 --
 
-## Overfitting
+### Sol: Cross Validation
+<img class="plain" src="http://sebastianraschka.com/images/faq/evaluate-a-model/k-fold.png" width=800>
+
+--
+
+### 用途: Parameter Tuning
+<img class-"plain" src="https://qph.ec.quoracdn.net/main-qimg-2d5918dd335def0b7bb9c5ec3a26d9be?convert_to_webp=true" width=800>
+
+--
+
+## P3: Overfitting
 <img class="plain" src="https://upload.wikimedia.org/wikipedia/commons/1/19/Overfitting.svg" width=500>
 
 --
 
-<img class="plain" src="http://blog.fliptop.com/wp-content/uploads/2015/03/highvariance.png" width=700>
+### Sol: Stop Early
+<img class="plain" src="http://blog.fliptop.com/wp-content/uploads/2015/03/highvariance.png" width=650>
 
 
 ---
@@ -164,8 +179,24 @@ Probably Approximately Correct
 
 --
 
-
+## 打開 c9.io !
 
 ---
 
-# Thinking challenge
+# Thinking Challenge
+
+--
+
+## 旅遊網站抓騙子
+- 假信用卡
+- 從甲飛乙，但在很遠的丙訂旅館
+- 盜帳號
+- ...
+
+--
+
+## 思考方向
+- 需要的data
+- 三種問題(classify, regression, clustering)裡的哪一種？
+- 怎麼train，怎麼make prediction?
+- 客戶隱私

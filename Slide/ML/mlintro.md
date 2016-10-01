@@ -50,15 +50,47 @@ $ ./blah.sh
 
 --
 
+<img class="plain" src="http://beader.me/imgs/is-learning-feasible/no_free_lunch.png" width =1200>
+
+--
+
 ## 推斷未知的世界
 用樣本的統計推斷整體的參數
 
 --
 
+### 複雜版的大數法則
+樣本數越大，我們所選 h (看到的誤差) 跟 (實際的誤差) <br>「差很少」的「機率很大」
+![](img/PAC.png)
+
+--
+
+### PAC Learnible
+Probably Approximately Correct
+
+可能大概正確
+
+--
+
+<img class="plain", src="https://cdn.meme.am/instances/500x/12334653.jpg" width=600>
 
 ---
 
+## 兩種問題
+
+--
+
+- Regression: 預測連續的值 - 價格、機率...
+- Classification: 預測分類 - 好壞、哪種動物...
+
+--
+
 ## 常用模型
+
+--
+
+### 線性回歸 Linear Regression
+<img class="plain" src="http://rasbt.github.io/mlxtend/user_guide/regressor/LinearRegression_files/simple_regression.png">
 
 --
 
@@ -77,6 +109,33 @@ $ ./blah.sh
 
 ### Reinforcement Learning
 [fancy demo](http://cs.stanford.edu/people/karpathy/convnetjs/demo/rldemo.html)
+
+---
+
+## 實際上常見的問題
+
+--
+
+## Curse of Dimensionality
+
+--
+
+### Principle Component Analysis(PCA)
+<img class="plain" src="http://lazyprogrammer.me/wp-content/uploads/2015/11/PCA.jpg">
+
+--
+
+## Overfitting
+<img class="plain" src="https://upload.wikimedia.org/wikipedia/commons/1/19/Overfitting.svg" width=500>
+
+--
+
+### Cross Validation
+
+--
+
+<img class="plain" src="http://blog.fliptop.com/wp-content/uploads/2015/03/highvariance.png" width=700>
+
 
 ---
 

@@ -4,7 +4,9 @@
 
 ## 先來裝package
 $ git clone blah
+
 $ cd blah/
+
 $ ./blah.sh
 
 ---
@@ -29,6 +31,14 @@ $ ./blah.sh
 
 ## 為什麼機器能學到東西
 圖片及內容來自台大林軒田教授
+
+--
+
+## Terminology
+- training
+- feature
+- model
+- prediction
 
 --
 
@@ -83,14 +93,20 @@ Probably Approximately Correct
 - Regression: 預測連續的值 - 價格、機率...
 - Classification: 預測分類 - 好壞、哪種動物...
 
+
 --
 
 ## 常用模型
 
 --
 
+### Naive Bayes
+<img class="plain" src="http://www.saedsayad.com/images/Bayes_rule.png" width=800>
+
+--
+
 ### 線性回歸 Linear Regression
-<img class="plain" src="http://rasbt.github.io/mlxtend/user_guide/regressor/LinearRegression_files/simple_regression.png">
+[fancy demo](http://setosa.io/ev/ordinary-least-squares-regression/)
 
 --
 
@@ -116,7 +132,7 @@ Probably Approximately Correct
 
 --
 
-## Curse of Dimensionality
+## P1:Curse of Dimensionality
 
 --
 
@@ -125,12 +141,12 @@ Probably Approximately Correct
 
 --
 
-## Overfitting
-<img class="plain" src="https://upload.wikimedia.org/wikipedia/commons/1/19/Overfitting.svg" width=500>
+### Cross Validation
 
 --
 
-### Cross Validation
+## Overfitting
+<img class="plain" src="https://upload.wikimedia.org/wikipedia/commons/1/19/Overfitting.svg" width=500>
 
 --
 
@@ -140,6 +156,15 @@ Probably Approximately Correct
 ---
 
 # Hands on!
+
+--
+
+## Task: Iris Classification
+<img class="plain" src="http://www.plant-world-seeds.com/images/seed_images/IRIS_VERSICOLOR/size2_200x200/IRIS_VERSICOLOR.JPG?1355843115"><img class="plain" src="http://www.plant-world-seeds.com/images/seed_images/IRIS_SETOSA/size2_200x200/IRIS%20SETOSA.JPG?1283789830"><img class = "plain" src="http://www.plant-world-seeds.com/images/seed_images/IRIS_VIRGINICA/size2_200x200/IRIS_VIRGINICA.JPG?1363709343">
+
+--
+
+
 
 ---
 

@@ -126,7 +126,3 @@ https://upload.wikimedia.org/wikipedia/commons/7/77/Unix_history-simple.svg
 - 所以當我們輸入ls的時候?
   - 執行ls，把後面跟著的參數告訴他
   - ls -> 列出對應該參數的結果
-- cd?
-  - shell可以不提供cd
-
---

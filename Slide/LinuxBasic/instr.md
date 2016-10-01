@@ -23,10 +23,8 @@
     - 底下的Material
     - 底下的LinuxBasic
   - 查看genFile.py的檔案大小(?B)
-  - 查看現在資料夾內有幾個檔案
-    - 不含資料夾
-    - 投票
-  - 查看
+  - 查看現在資料夾內有幾個檔案(不含資料)
+  - <a target="blank" href="http://qstn.co/q/fJcvpWQX">投票</a>
 
 --
 

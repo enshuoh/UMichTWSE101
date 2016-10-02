@@ -27,6 +27,10 @@
                data-separator="^\n---\n"
                data-separator-vertical="^\n--\n">
       </section>
+      <section data-markdown="unit2.md"
+               data-separator="^\n---\n"
+               data-separator-vertical="^\n--\n">
+      </section>
       <section data-markdown="QA.md"
                data-separator="^\n---\n"
                data-separator-vertical="^\n--\n">
@@ -67,7 +71,7 @@
             return !!document.querySelector( '[data-markdown]' );
           }
         },
-        { src: '../resource/plugin/highlight/highlight.js', async: true, callback: function() { 
+        { src: '../resource/plugin/highlight/highlight.js', async: true, callback: function() {
           hljs.initHighlightingOnLoad(); } }
       ]
     });

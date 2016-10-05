@@ -78,3 +78,8 @@ based on dark.css by Ivan Sagalaev
 .hljs-strong {
   font-weight: bold;
 }
+
+
+.hljs-tmt-builtin-function .hljs-keyword {
+  color: #abc3ff;
+}

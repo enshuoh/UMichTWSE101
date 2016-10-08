@@ -149,6 +149,8 @@ for x in range(0, n):
         eval("ans.%s(*args)" % cmd)
 ```
 
+* `eval()` 會有資安疑慮，請小心使用。
+
 --
 
 # Stay Tuned!

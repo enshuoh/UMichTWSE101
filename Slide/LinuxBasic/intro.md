@@ -5,7 +5,7 @@
 ---
 
 ## 作業系統
-  - Operation System
+  - Operating System
   - 範例 (順序無特別意義、理性勿戰)
     - Android, iOS
     - OSX, Windows, RedHat, Ubuntu

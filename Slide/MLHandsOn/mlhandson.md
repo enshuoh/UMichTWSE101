@@ -22,6 +22,8 @@ $ ./setup_env.sh
 --
 
 ### MNIST dataset
+- 高中生手寫數字
+- 55000筆training, 10000筆testing
 <img class="plain" src="http://simonwinder.com/wp-content/uploads/2015/07/mnistExamples.png" width=800>
 
 --
@@ -65,7 +67,7 @@ ipython3 notebook --ip=0.0.0.0 --port=8080 --no-browser
 ### import 需要的 library
 ```
 from sklearn.tree import DecisionTreeClassifier
-from sklearn import tree
+from sklearn.model_selection import KFold
 import numpy as np
 ```
 

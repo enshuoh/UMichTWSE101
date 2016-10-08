@@ -4,11 +4,16 @@
 
 ## 先來裝package
 ```
-$ git clone https://github.com/whus6207/se101_week1.git
-$ cd se101_week1/
+$ git clone git clone https://github.com/jimmy9988/UMichTWSE101.git
+$ cd UMichTWSE101/Material/MLHandsOn/
 $ chmod 755 setup_env.sh
 $ ./setup_env.sh
 ```
+
+--
+
+### Trouble Shooting
+[TesnorFlow如果python3版本不同可能要修正](https://www.tensorflow.org/versions/r0.11/get_started/os_setup.html)
 
 ---
 

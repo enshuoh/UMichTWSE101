@@ -4,7 +4,7 @@
 
 ## 先來裝package
 ```
-$ git clone git clone https://github.com/jimmy9988/UMichTWSE101.git
+$ git clone https://github.com/jimmy9988/UMichTWSE101.git
 $ cd UMichTWSE101/Material/MLHandsOn/
 $ chmod 755 setup_env.sh
 $ ./setup_env.sh

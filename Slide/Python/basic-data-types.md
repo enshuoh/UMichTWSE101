@@ -153,6 +153,148 @@ for x in range(0, n):
 
 --
 
+## 前置作業 4: List Comprehension
+
+如果我們想要「產生」一個新的 list，可以利用 List Comprehension 取代產生這個 list 所需要的迴圈。
+
+```python
+>>> [x**2 for x in range(10)]
+[0, 1, 4, 9, 16, 25, 36, 49, 64, 81] 
+```
+
+可以用 if 篩選想要的迴圈元素：
+
+```python
+>>> [x**2 for x in range(10) if x%3==0]
+[0, 9, 36, 81]
+```
+
+
+--
+
+## 前置作業 4: List Comprehension
+
+for 跟 if 可以混著用、多次使用！
+
+```python
+>>> [(x, y) for x in range(3)
+...         for y in range(3)
+...         if (x+y)%2==1]
+[(0, 1), (1, 0), (1, 2), (2, 1)]
+```
+
+--
+
+## List Comprehensions（提示篇）
+
+* [題目連結](https://www.hackerrank.com/challenges/list-comprehensions)
+* 給你 $X, Y, Z, N$ 的值，請找出所有的格子點 $(X_i, Y_i, Z_i)$ 使得他們的座標範圍落在 $[0, X]\times [0, Y]\times [0, Z]$ 而且三個座標值相加不等於 $N$。
+
+
+--
+
+## List Comprehensions（解答篇）
+
+* 基本上就是跑三個 for 加上一個 if 全部串起來就對啦～
+
+```python
+X = int(input())
+Y = int(input())
+Z = int(input())
+N = int(input())
+
+ans = [[x, y, z] for x in range(X+1) 
+      for y in range(Y+1)
+      for z in range(Z+1) if x+y+z!=N]
+
+print(ans)
+```
+
+
+--
+
+## Nested Lists（提示篇）
+
+* [題目連結](https://www.hackerrank.com/challenges/nested-list)
+* 給你學生的名字和成績，請輸出成績第二差的所有名字（並依照字典順序排序輸出）
+
+--
+
+## Nested Lists（不給解答篇）
+
+* sort 的應用~
+
+
+
+
+--
+
+
+## 前置作業 5: Lambda Functions
+
+* 把它想成簡易的「一行文」函數就可以了～
+* 推薦參考文章：[https://blog.liang2.tw/python-tutorial-slides/old.2013.04/#lambda-builtin](https://blog.liang2.tw/python-tutorial-slides/old.2013.04/#lambda-builtin)
+
+```
+>>> list(map(lambda x: x**2, range(10)))
+[0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
+```
+
+--
+
+
+## Any or All（提示篇）
+
+* [題目連結](https://www.hackerrank.com/challenges/any-or-all)
+* 給你 $N$ 個數字，請問這 $N$ 個數字是否同時滿足：
+    * 條件一：所有數字都是正數
+    * 條件二：存在某個數字是迴文數字
+* 提示：判斷 $x$ 是否為迴文數字可以用
+
+```python
+lambda x: str(x)[::-1] == str(x)
+```
+
+--
+
+
+## Any or All（解答篇）
+
+
+```python
+n = int(input())
+arr = list(map(int, input().split()))
+print(
+  all(map(lambda x: x > 0, arr))
+  and
+  any(map(
+    lambda y: str(y)[::-1] == str(y),
+    arr)))
+```
+
+--
+
+## 一個困難的問題
+
+為什麼下面這個寫法會錯？
+
+
+```python
+n = int(input())
+arr = map(int, input().split())   # ?!
+print(
+  all(map(lambda x: x > 0, arr))
+  and
+  any(map(
+    lambda y: str(y)[::-1] == str(y),
+    arr)))
+```
+
+* 我們之後才能回答，看不懂請先認明：想要用 list 的時候就把它強制轉成 list。
+
+--
+
+
 # Stay Tuned!
 
 ## 下集待續

@@ -13,3 +13,5 @@ localhost:8000/Slide/Template
   - Possible topic discussion
   - Basic environment setup
   - Basic Git tutorial
+
+- Week 1

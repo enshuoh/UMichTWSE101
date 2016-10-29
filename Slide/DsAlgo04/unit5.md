@@ -83,3 +83,15 @@ return max(ret)
 * Divide and Conquer <font color=gray>like a boss</font>
 
 <img src="http://synergizeonline.net/bookmark-awards/wp-content/uploads/2013/09/like-a-boss21.jpg" style="width:300px">
+
+
+--
+
+## The Skyline Problem
+
+* 魔王題
+* [題目敘述](https://leetcode.com/problems/the-skyline-problem/)
+
+--
+
+# Have a good weekend!

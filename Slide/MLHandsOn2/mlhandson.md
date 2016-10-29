@@ -8,6 +8,7 @@ $ git clone https://github.com/jimmy9988/UMichTWSE101.git
 $ cd UMichTWSE101/Material/CrawlerPipeline/
 $ sh install.sh
 ```
+
 ---
 
 ## 新聞分類從無到有
@@ -44,5 +45,3 @@ http://www.cnn.com/
 - Train
 - Test
 - Refine
-
---

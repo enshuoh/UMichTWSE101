@@ -213,6 +213,8 @@ print(numpy.max(numpy.min(A, axis=1)))
 ## Dot and Cross
 
 * [題目連結](https://www.hackerrank.com/challenges/np-dot-and-cross)
+* 矩陣乘法！
+* 向量的內積、外積。
 
 --
 

@@ -198,7 +198,7 @@ numpy.cumsum(a) # [1, 3, 6]
 ## Solution Part 1
 
 ```python
-def countRangeSum(self, nums, lower, upper)
+def countRangeSum(self, nums, lower, upper):
   nums.insert(0, 0)
 
   # 計算前綴和（並且複製一份）

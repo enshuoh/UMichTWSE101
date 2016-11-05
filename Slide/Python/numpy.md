@@ -1,6 +1,8 @@
 # Section 3
 ## Numpy
 
+矩陣操作、數值工具
+
 --
 
 ## 預備知識：浮點數
@@ -15,9 +17,10 @@
 * 給你一個浮點數陣列，請你輸出反過來的陣列。
 * 方便的提示：`numpy` 會自動幫你轉換型別！
 ```python
-numpy.array(object, dtype=None, copy=True, order=None, subok=False, ndmin=0)
+numpy.array([1, '2', 3.0], float)
+# array([ 1.,  2.,  3.])
 ```
-<!-- .element: style="font-size:30%" -->
+<!-- .element: style="font-size:50%" -->
 * 要怎麼把陣列反過來？
 
 

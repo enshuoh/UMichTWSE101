@@ -195,4 +195,86 @@ numpy.cumsum(a) # [1, 3, 6]
 
 --
 
+## Solution Part 1
+
+```python
+def countRangeSum(self, nums, lower, upper)
+  nums.insert(0, 0)
+
+  # 計算前綴和（並且複製一份）
+  psum = np.cumsum(nums)
+  psum2 = np.array(psum)
+
+  # 分別對上界、下界進行計算
+  ans = self.count(psum, 0, len(psum)-1, upper)
+  ans -= self.count(psum2, 0, len(psum)-1, lower-1)
+  return ans
+```
+<!-- .element: style="font-size:40%" -->
+
+--
+
+## Solution Part 2
+
+```python
+def count(self, psum, lo, hi, upper):
+  if lo >= hi:
+    return 0
+  mid = (lo + hi) // 2
+
+  # Divide and Conquer
+  ans = self.count(psum, lo, mid, upper)
+  ans += self.count(psum, mid+1, hi, upper)
+
+  # Combine
+  ans += self.countPairs(psum, lo, mid, hi, upper)
+  self.merge(psum, lo, mid, hi)
+  return ans
+```
+<!-- .element: style="font-size:40%" -->
+
+--
+
+## Solution Part 3
+
+```python
+def countPairs(self, psum, lo, mid, hi, upper):
+  ans = 0
+
+  # Two Pointers!
+  j = mid
+  for i in range(lo, mid+1):
+    while j < hi and psum[j+1] - psum[i] <= upper:
+      j += 1
+    ans += (j - mid)
+  return ans
+```
+<!-- .element: style="font-size:40%" -->
+
+--
+
+## Solution Part 4
+
+```python
+def merge(self, psum, lo, mid, hi):
+  replaced = []
+
+  # Two Pointers!
+  j = mid+1
+  for i in range(lo, mid+1):
+    while j <= hi and psum[j] < psum[i]:
+      replaced.append(psum[j])
+      j += 1
+      replaced.append(psum[i])
+    while j <= hi:
+      replaced.append(psum[j])
+      j += 1
+  for i in range(lo, hi+1):
+    psum[i] = replaced[i - lo]
+```
+<!-- .element: style="font-size:40%" -->
+
+--
+
+
 # Have a good weekend!

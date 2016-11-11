@@ -117,6 +117,7 @@ class Husky(Dog):
   def isStupid(self):
     return True
 ```
+
 --
 
 ## Polymorphism 多型
@@ -127,6 +128,7 @@ class Husky(Dog):
     - 呼叫
   - Overload 多載
     - 同樣名字的函數，給予不同的參數時產生不同的行為
+
 --
 
 ## Abstraction 抽象化

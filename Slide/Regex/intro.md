@@ -145,6 +145,7 @@ $A\bullet B = \\{a_ib_j\ |\ \forall i, j\\}$
 * $\\{\mathtt{a}^n\mathtt{b}^n\\}$
 * 同樣的字串貼兩次
 * 迴文字串 Palindromes
+* 合法括弧字串
 
 --
 

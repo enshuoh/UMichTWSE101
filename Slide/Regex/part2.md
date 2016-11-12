@@ -32,6 +32,14 @@
 
 --
 
+## 判斷質數
+
+* 判斷字串是否由質數個 1 所組成。
+
+http://stackoverflow.com/questions/3296050/how-does-this-regex-find-primes
+
+--
+
 ## Grep
 
 g/re/p

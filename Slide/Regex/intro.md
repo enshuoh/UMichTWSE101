@@ -105,6 +105,7 @@ $A\bullet B = \\{a_ib_j\ |\ \forall i, j\\}$
 
 * 重複 0 次或多次：`($pattern$)*`
 * 出現 0 次或 1 次：`($pattern$)?`
+* 重複 1 次或多次：`($pattern$)+`
 * 重複 $n$ 次：`($pattern$){$n$}`
 * 重複 $n$ 次到 $m$ 次之間：`($pattern$){$n$,$m$}`
 

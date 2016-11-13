@@ -32,14 +32,6 @@
 
 --
 
-## 判斷質數
-
-* 判斷字串是否由質數個 1 所組成。
-
-http://stackoverflow.com/questions/3296050/how-does-this-regex-find-primes
-
---
-
 ## 列首、列尾
 
 * `^` - begin of the line.
@@ -51,7 +43,8 @@ http://stackoverflow.com/questions/3296050/how-does-this-regex-find-primes
 
 * `\.`
 * `\(`, `\)`
-* `\/`
+* `\/`, `\\`
+* `\^`, `\$`
 
 --
 
@@ -72,7 +65,12 @@ http://stackoverflow.com/questions/3296050/how-does-this-regex-find-primes
 
 ## Grep
 
-g/re/p
+* ed: 簡易文字編輯器
+* g/re/p (globally search a regular expression and print)
+
+```
+$ grep -i "python" -r .
+```
 
 --
 
@@ -88,3 +86,21 @@ g/re/p
 
 * [Regular Expression Crosswords](https://regexcrossword.com/)
 * [Regular Tuesday Challenges](http://callumacrae.github.io/regex-tuesday/)
+
+
+
+--
+
+## 判斷質數
+
+* 判斷字串是否由質數個 1 所組成。
+
+http://stackoverflow.com/questions/3296050/how-does-this-regex-find-primes
+
+
+--
+
+## 自產生程式碼 Quine
+
+* [Quine](https://en.wikipedia.org/wiki/Quine_(computing))
+* [self-matched regex](http://codegolf.stackexchange.com/questions/6798/self-matching-regex)

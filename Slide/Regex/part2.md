@@ -40,18 +40,46 @@ http://stackoverflow.com/questions/3296050/how-does-this-regex-find-primes
 
 --
 
+## 列首、列尾
+
+* `^` - begin of the line.
+* `$` - end of the line.
+
+--
+
+## 跳脫字元 Escaped Characters
+
+* `\.`
+* `\(`, `\)`
+* `\/`
+
+--
+
+## 方便的表示法
+
+* `\w` - word characters
+* `\d` - 數字字元
+* `\s` - 泛空白字元
+
+--
+
+## 選項 Flags
+
+* `g` - global
+* `i` - Case insensitive
+
+--
+
 ## Grep
 
 g/re/p
 
 --
 
-## sed
+## Shell Tools
 
-
---
-
-## Hands On
+* sed
+* awk
 
 
 --

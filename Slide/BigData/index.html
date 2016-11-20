@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="../resource/css/reveal.css">
   <link rel="stylesheet" href="../resource/css/theme/umich.css" id="theme">
   <link rel="stylesheet" href="../resource/css/reveal-override.css">
+  <link rel="stylesheet" href="../resource/lib/css/zenburn.css">
   <!--Add support for earlier versions of Internet Explorer -->
   <!--[if lt IE 9]>
   <script src="lib/js/html5shiv.js"></script>
@@ -46,7 +47,10 @@
       center: true,
 
       transition: 'slide', // none/fade/slide/convex/concave/zoom
-
+      math: {
+        mathjax: 'https://cdn.mathjax.org/mathjax/latest/MathJax.js',
+        config: 'TeX-AMS_HTML-full'  // See http://docs.mathjax.org/en/latest/config-files.html
+      },
       // 加入一些 reveal.js 的外掛
       dependencies: [
         { src: '../resource/plugin/highlight/highlight.js',
@@ -65,7 +69,9 @@
           condition: function() {
             return !!document.querySelector( '[data-markdown]' );
           }
-        }
+        },
+        { src: '../resource/plugin/highlight/highlight.js', async: true, callback: function() {
+          hljs.initHighlightingOnLoad(); } }
       ]
     });
   </script>

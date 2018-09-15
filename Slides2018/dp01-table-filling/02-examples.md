@@ -66,3 +66,8 @@ Dynamic Programming Examples
 --
 
 ### [Leetcode 818. Race Car](https://leetcode.com/problems/race-car/description/)
+
+![](https://i.ytimg.com/vi/ZBZLx0ZLEJQ/maxresdefault.jpg)
+<!-- .element: style="height:300px" -->
+![](https://i.chzbgr.com/full/5004943360/h1B7E50FF/)
+<!-- .element: style="height:300px" -->

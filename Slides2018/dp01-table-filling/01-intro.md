@@ -9,6 +9,12 @@ UMTW-SE101 Fall 2018
 
 --
 
+### 回顧
+
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSAbYvhKu8RGSPBe4NToOg9E_t41fGhtPepv-GlFE_qHNkaOKDm3IZPwv_ucrly9_tG42MZYlgJ3FJo/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+--
+
 ![](https://images.1111.com.tw/discussPic/85/50951785_34510577.1958167.png)
 
 --

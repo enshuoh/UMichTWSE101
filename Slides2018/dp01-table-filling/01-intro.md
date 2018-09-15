@@ -136,26 +136,18 @@ int Fib(int n) {
 <!-- .slide: data-background="#FDA" -->
 ### <span style="font-size:90%">腦殼裡的動態規劃</span>
 
-* <span style="font-size:80%">
-    <span style="color:#B72">第 3 步：</span>
+* <span style="color:#B72">第 3 步：</span>
     <div style="display:inline-block;vertical-align:text-top"> 修好你的<span style="color:#B72">第 1 步</span>。</div>
   </span>
-* <!-- .element: class="fragment" -->
-    <span style="font-size:80%">
-    One way: <span style="color:blue"><b><i>memoization</i></b></span>
-  </span>
-    - <!-- .element: style="font-size:70%" -->
-    Run your recursive algorithm as before, **except**: 
-    - <!-- .element: style="font-size:70%" -->
-    Make a note of every function call you make and the value returned. If called again, just return the value you stored.
-* <!-- .element: class="fragment" -->
-    <span style="font-size:80%">
-    Another way: solve the subproblems <span style="color:blue"><b><i>bottom up</i></b></span>
-    </span>
-    - <!-- .element: style="font-size:70%" -->
-    Start with the smallest subproblems
-    - <!-- .element: style="font-size:70%" -->
-    Use the answers to these subproblems to solve larger subproblems, etc.
+* <!-- .element: class="fragment" data-fragment-index="1" -->
+    One way: <span style="color:blue">記憶化搜索 <b><i>memoization</i></b></span>
+    - 算過的記起來，再次呼叫的時候就直接回傳答案。
+* <!-- .element: class="fragment" data-fragment-index="2" -->
+    Another way: solve the subproblems <span style="color:blue">自下而上 <b><i>bottom up</i></b></span>
+    - 從最小的（潛在會被用到的）子問題開始計算。
+
+![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoCUf2Vp0XuRDK9KdjqK5CADnfWXbZ5OB-sXl38l4d21ovR7qc)
+<!-- .element: class="fragment" data-fragment-index="1" style="float:right" -->
 
 --
 
@@ -165,13 +157,19 @@ int Fib(int n) {
 
 ```cpp
 // Suppose we want to compute Fib(k).
-Initialize an array A[0..k] to NULL.
+unordered_map<int, int> A;
 // Then we define the recursive function and calls Fib(k).
-Fib(n):
-    if A[n] ≠ NULL, return A[n].
-    if n < 2 return n.
-    A[n] = Fib(n - 1) + Fib(n - 2).
-    return A[n].
+int Fib(int n) {
+    if (A.find(n) != A.end()) {
+        return A[n];
+    }
+    if (n < 2) {
+        A[n] = n;
+    } else {
+        A[n] = Fib(n - 1) + Fib(n - 2);
+    }
+    return A[n];
+}
 ```
 
 --
@@ -181,27 +179,23 @@ Fib(n):
 * A simpler bottom-up version
 
 ```cpp
-Fib(k):
-    A[0] := 0
-    A[1] := 1
-    for i from 2 to k
-        A[i] := A[i - 1] + A[i - 2]
-    return A[k]
+int Fib(int k) {
+    // (Optional) Initialize an array of k+1 entries.
+    vector<int> A = {0, 1};
+    A.resize(k + 1);
+    // Compute each recurrence from smallest to k.
+    for (int i = 2; i <= k; i++) {
+        A[i] = A[i - 1] + A[i - 2];
+    }
+    return A[k];
+}
 ```
 
 --
 
 <!-- .slide: data-background="#ABD" -->
-### Notes
+### 動態規劃的重點
 
-1. Once you have the correct **recurrence relations**, the implementation part is easy.
-2. Make sure you have correct **base cases** (i.e., boundary conditions.)
-
---
-
-<!-- .slide: data-background="#FDA" -->
-### Analysis
-
-* For most dynamic programming problems (implemented in either way), the time complexity could be described as:
-
-$O(($ # of subproblems$)\times ($time needed for evaluating one recurrence relation$)).$
+1. 定義<span class="blue">遞迴函數</span>。
+2. 找出<span class="red">遞迴關係</span>。
+3. 確定<span class="green">邊界條件</span>。

@@ -31,11 +31,14 @@ span.ed-del {
     font-size: 80%;
 }
 .red {
-    color: red;
+    color: #E33;
 }
 .blue {
-    color: blue;
+    color: #23E;
 }
 .brown {
     color: brown;
+}
+.green {
+    color: #3A1;
 }

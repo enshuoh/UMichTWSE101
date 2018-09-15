@@ -1,0 +1,38 @@
+.reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
+    font-family: 'Bree Serif', 'Noto Sans CJK TC', serif;
+}
+
+body {
+    font-family: 'Roboto', 'Noto Sans CJK TC', sans-serif;
+}
+
+.left {
+  left:-8.33%;
+  text-align: left;
+  float: left;
+  width:50%;
+  z-index:-10;
+}
+
+.right {
+  left:31.25%;
+  top: 75px;
+  float: right;
+  text-align: right;
+  z-index:-10;
+  width:50%;
+}
+
+body:after {
+  content: " ";
+  background-image: url(http://vpcomm.umich.edu/assets/brand/home/logo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  display: inline-block;
+  position: fixed;
+  height: 10%;
+  width: 10%;
+  bottom: 2.5em;
+  left: 2.5em;
+}

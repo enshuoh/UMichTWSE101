@@ -1,0 +1,48 @@
+.tmt.plain-table tr,
+.tmt.plain-table td,
+.tmt.plain-table th {
+    border: 1px solid black !important;
+}
+
+td.ed-swap {
+    background-color: #BEA;
+}
+td.ed-ins {
+    background-color: #BCF;
+}
+td.ed-del {
+    background-color: #FCB;
+}
+span.ed-swap {
+    color: green;
+    font-style: italic;
+}
+span.ed-ins {
+    color: blue;
+    
+    font-style: italic;
+}
+span.ed-del {
+    color: red;
+    font-style: italic;
+}
+
+.reveal ul li ul {
+    font-size: 80%;
+}
+.red {
+    color: #E33;
+}
+.blue {
+    color: #23E;
+}
+.brown {
+    color: brown;
+}
+.green {
+    color: #3A1;
+}
+
+.reveal pre code {
+    max-height: 600px;
+}

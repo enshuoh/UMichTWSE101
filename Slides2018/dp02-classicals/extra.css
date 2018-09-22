@@ -45,4 +45,14 @@ span.ed-del {
 
 .reveal pre code {
     max-height: 600px;
+    font-size: 80%;
+    line-height: 1.2em;
+}
+
+.reveal ul li {
+    font-size: 80%;
+}
+
+.reveal code {
+    font-size: 80%;
 }

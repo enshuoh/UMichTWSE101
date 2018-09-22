@@ -14,7 +14,7 @@ Reveal.addEventListener( 'ready', function( event ) {
     var link = document.createElement( 'link' );
     link.rel = 'stylesheet';
     link.type = 'text/css';
-    link.href = 'plugin/line-numbers/line-numbers.css';
+    link.href = '../resource/plugin/line-numbers/line-numbers.css';
     // Add CSS to head
     document.getElementsByTagName( 'head' )[0].appendChild( link );
   }
@@ -28,12 +28,17 @@ Reveal.addEventListener('slidechanged', function(event) {
 
 function addLineNumbers() {
   // For any code blocks in the current slide with class 'line-numbers'.
-  var line_numbers = document.getElementsByClassName("line-numbers");
+  var all_code_blocks = document.getElementsByClassName("line-numbers");
   // Store line numbers to highlight
   var highlights = [];
   // Loop through all code blocks
+  var line_numbers = [];
+  for (var l = 0; l < all_code_blocks.length; l++) {
+    line_numbers.push(all_code_blocks[l].firstChild);
+  }
   for (var l = 0; l < line_numbers.length; l++) {
     highlights = [];
+    console.log(line_numbers[l]);
     // See if current block has highlight js and line number not already applied.
     if (line_numbers[l].classList.contains('hljs') && (line_numbers[l].innerHTML.indexOf("line-number") < 1)) {
       // See if there are any lines that need to be highlighted.

@@ -318,3 +318,11 @@ public:
 
 ### [Leetcode 518. Coin Change 2](https://leetcode.com/problems/coin-change-2/description/)
 
+---
+
+### [Leetcode 403. Frog Jump](https://leetcode.com/problems/frog-jump/description/)
+
+---
+
+### [Leetcode 363. Max Sum of Rectangle No Larger Than K](https://leetcode.com/problems/max-sum-of-rectangle-no-larger-than-k/description/)
+

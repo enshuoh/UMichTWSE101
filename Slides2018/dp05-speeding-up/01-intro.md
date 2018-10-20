@@ -45,3 +45,4 @@ UMTW-SE101 Fall 2018
 * [Tower of Hay](http://tjsct.wikidot.com/usaco-open09-gold) [(Analysis)](http://contest.usaco.org/TESTDATA/OPEN09.tower.htm)
 * [有限制數量背包](https://tioj.ck.tp.edu.tw/problems/1387)
 * [土地購買問題](http://tjsct.wikidot.com/usaco-mar08-gold)
+* [Minimum Number of Rooks](https://icpcarchive.ecs.baylor.edu/external/21/p2178.pdf)

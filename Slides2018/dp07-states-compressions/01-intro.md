@@ -28,16 +28,21 @@ UMTW-SE101 Fall 2018
 
 ### 概念
 
-* 溝通
-* 描述
-* 改變
+* 資訊
+    * A 和 B 手上都有相同的 <span class="green">資訊</span>（輸入）。
+* 狀態
+    * A 想要告訴 B 關於這資訊的某個相關的狀態<span class="red">描述</span>
+* 關聯
+    * B 想要告訴 A，與剛才收到的狀態有<span class="blue">關聯</span>的其他狀態。
 
 --
 
 ### 例一
 
-* 給定字串 $S$，描述任一子字串(substring)。
-* $[i, j]$ <!-- .element: class="fragment" -->
+* 資訊：字串 $S$
+* 狀態：任何一個連續的子字串 (substring)
+* 關聯：把這個子字串的第一個或最後一個字母去掉
+
 
 ![](images/example1.png)
 <!-- .element: style="float:right;height:200px" -->
@@ -46,8 +51,9 @@ UMTW-SE101 Fall 2018
 
 ### 例二
 
-* 給定 $n$ 個數字，描述任一子集合(subset)。
-* bit strings <!-- .element: class="fragment" -->
+* 資訊：$n$ 個數字
+* 狀態：描述任一子集合 (subset)
+* 關聯：從這個子集合中去掉任一個數值
 
 ![](images/example2.png)
 <!-- .element: style="float:right;height:150px" -->
@@ -56,7 +62,9 @@ UMTW-SE101 Fall 2018
 
 ### 例三
 
-* 給定一棵樹，描述任一子樹(subtree)。
+* 資訊：一棵二元樹 $T$
+* 狀態：描述任一子樹 (subtree)
+* 關聯：這個子樹的子樹
 
 ![](https://uniform.wingzero.tw/assets/images/badge/tw-taipei-lssh.png)
 <!-- .element: style="float:right;height:200px" -->
@@ -65,7 +73,9 @@ UMTW-SE101 Fall 2018
 
 ### 例四
 
-* 給定一棵樹，描述任一同構子樹。
+* 資訊：一棵二元樹 $T$
+* 狀態：描述任一子樹 (subtree)
+* 關聯：與這個子樹同構的所有子樹
 
 ![](https://www.moedict.tw/%E7%AB%8B%E5%97%A3.png)
 <!-- .element: style="float:right;height:200px" -->
@@ -74,6 +84,12 @@ UMTW-SE101 Fall 2018
 
 ### 例五
 
-* 給定鋪設一半的水管線路，描述邊界的連通狀況。
+* 資訊：$n\times n$ 大小的棋盤，每一格有一片拼圖，依照由上而下、由左至右的順序編號 $1, 2, \ldots, n\times n$。
+* 狀態：鋪滿前 $k$ 塊拼圖以後的邊界狀況。  
+[![](https://bbsmax.ikafan.com/static/L3Byb3h5L2h0dHAvYWNtLmhkdS5lZHUuY24vZGF0YS9pbWFnZXMvQzM0OC0xMDA0LTIuanBn.jpg)](https://www.bbsmax.com/A/rV57MaBqzP/)
+* 關聯：鋪滿前 $k+1$ 塊拼圖以後的邊界狀況。
 
-![](https://files.cnblogs.com/files/RogerDTZ/ct4.bmp)
+--
+
+### 例六
+

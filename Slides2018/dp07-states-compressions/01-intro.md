@@ -84,7 +84,7 @@ UMTW-SE101 Fall 2018
 
 ### 例五
 
-* 資訊：$n\times n$ 大小的棋盤，每一格有一片拼圖，依照由上而下、由左至右的順序編號 $1, 2, \ldots, n\times n$。
+* 資訊：$n\times m$ 大小的棋盤，每一格有一片拼圖，依照由上而下、由左至右的順序編號 $1, 2, \ldots, n\times m$。
 * 狀態：鋪滿前 $k$ 塊拼圖以後的邊界狀況。  
 [![](https://bbsmax.ikafan.com/static/L3Byb3h5L2h0dHAvYWNtLmhkdS5lZHUuY24vZGF0YS9pbWFnZXMvQzM0OC0xMDA0LTIuanBn.jpg)](https://www.bbsmax.com/A/rV57MaBqzP/)
 * 關聯：鋪滿前 $k+1$ 塊拼圖以後的邊界狀況。
@@ -93,3 +93,4 @@ UMTW-SE101 Fall 2018
 
 ### 例六
 
+* 資訊：$n\times m$ 大小的網格，
